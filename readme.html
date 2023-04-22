@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="sv">
+	<head>
+		<base href="/"/>
+		<meta charset="utf-8"/>
+		<meta content="Bokföring för enskilda näringsverksamheter" name="description"/>
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport"/>
+		<style>
+			body {
+				max-width: 960px;
+			}
+
+			caption {
+				caption-side: bottom;
+				font-style: italic;
+				padding: 8px;
+			}
+
+			table {
+				border-collapse: collapse;
+				border-spacing: 0px;
+				width: 100%;
+			}
+
+			thead {
+				background-color: lightgray;
+			}
+
+			td,
+			th {
+				border: 1px solid black;
+				font-family: monospace;
+				overflow: hidden;
+				padding: 4px 8px;
+				text-overflow: ellipsis;
+				word-break: break-word;
+			}
+
+			tr > *:first-child {
+				text-align: left;
+			}
+
+			tr > *:nth-child(1n+2) {
+				text-align: right;
+			}
+
+			tbody > tr > *:first-child {
+				white-space: normal;
+			}
+
+			tbody > tr > *:nth-child(1n+2) {
+				white-space: nowrap;
+			}
+		</style>
+		<title>Bokföring för enskilda näringsverksamheter</title>
+	</head>
+	<body>
+		<h1>Bokföring för enskilda näringsverksamheter</h1>
+
+		<p>Den här guiden är inte skriven av en auktoriserad revisor utan av en enskild näringsidkare som sköter sin egen bokföring. Guiden kan innehålla faktafel och ska inte ses som rådgivning utan syftar istället till att öka förståelsen för hur bokföring sköts för en enskild näringsverksamhet.</p>
+
+		<p>Joel Ek</p>
+
+		<h2>Löpande bokföring</h2>
+
+		<h3>Vid utställning av faktura</h3>
+
+		<p>När en enskild näringsverksamhet ställer ut en faktura ska detta bokföras. Den utställda fakturan används som underlag för verifikatet.</p>
+
+		<table class="kontering">
+			<caption>Kontering för en utställd faktura på 3750,00 kr inkl. moms för en tjänst med 25% momssats.</caption>
+			<thead>
+				<tr>
+					<th>Konto</th>
+					<th>Debet</th>
+					<th>Kredit</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1510 Kundfodringar</td>
+					<td>3 750,00</td>
+					<td>0,00</td>
+				</tr>
+				<tr>
+					<td>2611 Utgående moms på försäljning inom Sverige, 25 %</td>
+					<td>0,00</td>
+					<td>750,00</td>
+				</tr>
+				<tr>
+					<td>3011 Försäljning tjänster inom Sverige, 25 % moms</td>
+					<td>0,00</td>
+					<td>3 000,00</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h3>Vid mottagande av betalning för utställd faktura</h3>
+
+		<p>När en enskild näringsverksamhet mottar betalning från en kund för en utställd faktura ska detta bokföras. Underlag saknas generellt men verifikatet kan styrkas genom motsvarande transaktion på företagskontot hos banken.</p>
+
+		<table class="kontering">
+			<caption>Kontering för mottagande av betalning för en utställd faktura på 3750,00 kr inkl. moms.</caption>
+			<thead>
+				<tr>
+					<th>Konto</th>
+					<th>Debet</th>
+					<th>Kredit</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1510 Kundfodringar</td>
+					<td>0,00</td>
+					<td>3 750,00</td>
+				</tr>
+				<tr>
+					<td>1930 Företagskonto / affärskonto</td>
+					<td>3 750,00</td>
+					<td>0,00</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h3>Vid mottagande av faktura</h3>
+
+		<p>När en enskild näringsverksamhet mottar en faktura från en leverantör ska detta bokföras. Den mottagna fakturan används som underlag för verifikatet.</p>
+
+		<table class="kontering">
+			<caption>Kontering för en mottagen faktura på 1 559,00 kr inkl. moms för inköp av förbrukningsinventarier.</caption>
+			<thead>
+				<tr>
+					<th>Konto</th>
+					<th>Debet</th>
+					<th>Kredit</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2440 Leverantörsskulder</td>
+					<td>0,00</td>
+					<td>1 559,00</td>
+				</tr>
+				<tr>
+					<td>2640 Ingående moms</td>
+					<td>311,80</td>
+					<td>0,00</td>
+				</tr>
+				<tr>
+					<td>5410 Förbrukningsinventarier</td>
+					<td>1 247,20</td>
+					<td>0,00</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<table class="kontering">
+			<caption>Kontering för en mottagen faktura på 148,00 kr inkl. moms för inköp av datakommunikationstjänster.</caption>
+			<thead>
+				<tr>
+					<th>Konto</th>
+					<th>Debet</th>
+					<th>Kredit</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2440 Leverantörsskulder</td>
+					<td>0,00</td>
+					<td>148,00</td>
+				</tr>
+				<tr>
+					<td>2640 Ingående moms</td>
+					<td>29,61</td>
+					<td>0,00</td>
+				</tr>
+				<tr>
+					<td>3740 Öres- och kronutjämning</td>
+					<td>0,00</td>
+					<td>0,01</td>
+				</tr>
+				<tr>
+					<td>6230 Datakommunikation</td>
+					<td>118,40</td>
+					<td>0,00</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h3>Vid betalning av mottagen faktura</h3>
+
+		<p>När en enskild näringsverksamhet betalar en mottagen faktura ska detta bokföras. Underlag saknas generellt men verifikatet kan styrkas genom motsvarande transaktion på företagskontot hos banken.</p>
+
+		<table class="kontering">
+			<caption>Kontering för betalning av en mottagen faktura på 1 559,00 kr inkl. moms.</caption>
+			<thead>
+				<tr>
+					<th>Konto</th>
+					<th>Debet</th>
+					<th>Kredit</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1930 Företagskonto / affärskonto</td>
+					<td>0,00</td>
+					<td>1 559,00</td>
+				</tr>
+				<tr>
+					<td>2440 Leverantörsskulder</td>
+					<td>1 559,00</td>
+					<td>0,00</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<table class="kontering">
+			<caption>Kontering för betalning av en mottagen faktura på 148,00 kr inkl. moms.</caption>
+			<thead>
+				<tr>
+					<th>Konto</th>
+					<th>Debet</th>
+					<th>Kredit</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1930 Företagskonto / affärskonto</td>
+					<td>0,00</td>
+					<td>148,00</td>
+				</tr>
+				<tr>
+					<td>2440 Leverantörsskulder</td>
+					<td>148,00</td>
+					<td>0,00</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h3>Vid eget uttag</h3>
+
+		<p>När en enskild näringsverksamhet gör ett eget uttag från företagskontot hos banken ska detta bokföras. Underlag saknas generellt men verifikatet kan styrkas genom motsvarande transaktion på företagskontot hos banken.</p>
+
+		<table class="kontering">
+			<caption>Kontering för eget uttag.</caption>
+			<thead>
+				<tr>
+					<th>Konto</th>
+					<th>Debet</th>
+					<th>Kredit</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1930 Företagskonto / affärskonto</td>
+					<td>0,00</td>
+					<td>8 949,00</td>
+				</tr>
+				<tr>
+					<td>2013 Övriga egna uttag</td>
+					<td>8 949,00</td>
+					<td>0,00</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h3>Vid egen insättning</h3>
+
+		<p>Situationen har personligen ej uppstått än men konteringen borde rimligen se ut som för eget uttag med omvänd debit och kredit och med konto 2018.</p>
+
+		<h2>Moms</h2>
+
+		<p>En enskild näringsverksamhet som är momsregistrerad måste efter varje momsperiods slut redovisa ingående och utgående moms genom Skatteverkets e-tjänst momsredovisning. Ingående moms betalas förvirrande nog av verksamheten vid betalning av fakturor medan utgående moms betalas till verksamheten vid mottagande av betalning för utställda fakturor.</p>
+
+		<p>Underskott uppstår när den ingående momsen är större än den utgående och betalas tillbaka av Skatteverket. Överskott uppstår när den utgående momsen är större än den ingående och måste betalas till Skatteverket.</p>
+
+		<p>För enskilda näringsverksamheter med mindre omsättning är det vanligt att moms redovisas årligen och därmed sammanfaller med redovisningsperioden.</p>
+
+		<h3>Vid momsredovisning</h3>
+
+		<p>När en enskild näringsverksamhet redovisar en momsperiod ska detta bokföras. Underlag saknas generellt men verifikatet kan styrkas genom övriga verifikat i bokföringsprogrammet.</p>
+
+		<p>Summan av den utgående momsen debiteras respektive konto/konton medan summan av den ingående momsen krediteras respektive konto/konton. Differensen beräknas, avrundas till hela kronor och debiteras vid underskott respektive krediteras vid överskott konto 2650.</p>
+
+		<table class="kontering">
+			<caption>Kontering för momsredovisning i vilken ett överskott på 11 761,00 kr har uppstått och måste betalas till Skatteverket. De resulterande summorna på konto 2611 och 2640 blir noll för momsperioden när konteringen utförts.</caption>
+			<thead>
+				<tr>
+					<th>Konto</th>
+					<th>Debet</th>
+					<th>Kredit</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2611 Utgående moms på försäljning inom Sverige, 25 %</td>
+					<td>17 855,10</td>
+					<td>0,00</td>
+				</tr>
+				<tr>
+					<td>2640 Ingående moms</td>
+					<td>0,00</td>
+					<td>6 094,54</td>
+				</tr>
+				<tr>
+					<td>2650 Redovisningskonto för moms</td>
+					<td>0,00</td>
+					<td>11 761,00</td>
+				</tr>
+				<tr>
+					<td>3740 Öres- och kronutjämning</td>
+					<td>0,44</td>
+					<td>0,00</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h3>Vid betalning av momsöverskott</h3>
+
+		<p>När en enskild näringsverksamhet betalar momsöverskott till Skatteverket ska detta bokföras. Underlag saknas generellt men verifikatet kan styrkas genom motsvarande transaktion på företagskontot hos banken.</p>
+
+		<table class="kontering">
+			<caption>Kontering för betalning av ett momsöverskott på 11 761,00 kr till Skatteverket. Den resulterande summan på konto 2650 blir noll för momsperioden när konteringen utförts.</caption>
+			<thead>
+				<tr>
+					<th>Konto</th>
+					<th>Debet</th>
+					<th>Kredit</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1930 Företagskonto / affärskonto</td>
+					<td>0,00</td>
+					<td>11 761,00</td>
+				</tr>
+				<tr>
+					<td>2650 Redovisningskonto för moms</td>
+					<td>11 761,00</td>
+					<td>0,00</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h3>Vid mottagande av betalning för momsunderskott</h3>
+
+		<p>Situationen har personligen ej uppstått än men konteringen borde rimligen se ut som för betalning av momsöverskott med omvänd debit och kredit.</p>
+
+		<h2>Bokslut</h2>
+
+		<p>En enskild näringsverksamhet måste efter varje redovisningsperiods slut göra ett bokslut. Bokslutet sammanställer intäkter och kostnader i en resultatrapport samt tillgångar, fordringar och skulder i en balansrapport.</p>
+
+		<h3>Resultatrapport</h3>
+
+		<p>Verksamhetens intäkter utgörs av summan av de intäkter exkl. moms verksamheten haft under redovisningsperioden justerat för eventuell öresutjämning. Summeringen görs huvudsakligen över konton i 3000-serien.</p>
+
+		<table class="resultat">
+			<caption>Balansräkning för verksamhetens intäkter. Öresavrundningen inkluderar eventuell avrundning som uppstår vid momsredovisning.</caption>
+			<thead>
+				<tr>
+					<th>Konto</th>
+					<th>Balans</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>3011 Försäljning tjänster inom Sverige, 25 % moms</td>
+					<td>71 420,40</td>
+				</tr>
+				<tr>
+					<td>3740 Öres- och kronutjämning</td>
+					<td>−1,82</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>71 418,58</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<p>Verksamhetens kostnader utgörs av summan av de kostnader exkl. moms verksamheten haft under redovisningsperioden. Balansräkningen görs huvudsakligen över konton i 5000- och 6000-serien.</p>
+
+		<table class="resultat">
+			<caption>Balansräkning för verksamhetens kostnader.</caption>
+			<thead>
+				<tr>
+					<th>Konto</th>
+					<th>Balans</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>5410 Förbrukningsinventarier</td>
+					<td>22 357,60</td>
+				</tr>
+				<tr>
+					<td>5910 Annonsering</td>
+					<td>375,00</td>
+				</tr>
+				<tr>
+					<td>6150 Trycksaker</td>
+					<td>345,00</td>
+				</tr>
+				<tr>
+					<td>6230 Datakommunikation</td>
+					<td>1 300,48</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>24 378,08</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<p>Verksamhetens resultat beräknas som differensen mellan intäkterna och kostnaderna och motsvarar 47 040,50 kr för exemplet.</p>
+
+		<h3>Balansrapport</h3>
+
+		<p>Verksamhetens tillgångar utgörs av summan av de tillgångar som är kopplade till verksamheten. Balansräkningen görs huvudsakligen över konton i 1000-serien.</p>
+
+		<table class="balans">
+			<caption>Balansräkning för verksamhetens tillgångar. Den utgående balansen för konto 1930 ska överensstämma med balansen för företagskontot hos banken vid redovisningsperiodens slut.</caption>
+			<thead>
+				<tr>
+					<th>Konto</th>
+					<th>Ingående balans</th>
+					<th>Förändring</th>
+					<th>Utgående balans</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1510 Kundfordringar</td>
+					<td>3000,00</td>
+					<td>-3000,00</td>
+					<td>0,00</td>
+				</tr>
+				<tr>
+					<td>1930 Företagskonto / affärskonto</td>
+					<td>11 915,00</td>
+					<td>49 869,50</td>
+					<td>61 784,50</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>14 915,00</td>
+					<td>46 869,50</td>
+					<td>61 784,50</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<p>Verksamhetens kapital utgörs av summan av det kapital som är kopplat till verksamheten. Balansräkningen görs huvudsakligen över konton i den låga 2000-serien.</p>
+
+		<table class="balans">
+			<caption>Balansräkning för verksamhetens kapital.</caption>
+			<thead>
+				<tr>
+					<th>Konto</th>
+					<th>Ingående balans</th>
+					<th>Förändring</th>
+					<th>Utgående balans</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2013 Övriga egna uttag</td>
+					<td>0,00</td>
+					<td>-8 949,00</td>
+					<td>-8 949,00</td>
+				</tr>
+				<tr>
+					<td>2099 Årets resultat</td>
+					<td>11 932,00</td>
+					<td>47 040,50</td>
+					<td>58 972,50</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>11 932,00</td>
+					<td>38 091,50</td>
+					<td>50 023,50</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<p>Verksamhetens skulder utgörs av summan av de skulder som är kopplade till verksamheten. Balansräkningen görs huvudsakligen över konton i den höga 2000-serien.</p>
+
+		<table class="balans">
+			<caption>Balansräkning för verksamhetens skulder. Den utgående balansen för konto 2650 ska överensstämma med beloppet från momsredovisningen.</caption>
+			<thead>
+				<tr>
+					<th>Konto</th>
+					<th>Ingående balans</th>
+					<th>Förändring</th>
+					<th>Utgående balans</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2650 Redovisningskonto för moms</td>
+					<td>2 983,00</td>
+					<td>8 778,00</td>
+					<td>11 761,00</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>2 983,00</td>
+					<td>8 778,00</td>
+					<td>11 761,00</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h3>Vid bokslut</h3>
+
+		<p>När en enskild näringsverksamhet upprättar ett bokslut ska resultatet bokföras. Underlag saknas generellt men verifikatet kan styrkas genom övriga verifikat i bokföringsprogrammet.</p>
+
+		<table class="kontering">
+			<caption>Kontering för ett års bokslut i vilket ett resultat med ett överskott om 47 040,50 kr bokförs.</caption>
+			<thead>
+				<tr>
+					<th>Konto</th>
+					<th>Debet</th>
+					<th>Kredit</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2099 Årets resultat</td>
+					<td>0,00</td>
+					<td>47 040,50</td>
+				</tr>
+				<tr>
+					<td>8999 Årets resultat</td>
+					<td>47 040,50</td>
+					<td>0,00</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h3>Hantering av årets resultat</h3>
+
+		<p>ATT GÖRA</p>
+
+		<h2>Deklaration</h2>
+
+		<p>En enskild näringsverksamhet förväntas i samband med den personliga deklarationen att skicka med en så kallad NE-bilaga. NE-bilagan innehåller nyckeluppgifter från bokslutets balans- och resultatrapporter och ligger till grund för de egenavgifter som ska betalas.</p>
+
+		<table class="ne">
+			<caption>Viktiga fält i NE-bilagan.</caption>
+			<thead>
+				<tr>
+					<th>Fält</th>
+					<th>Värde</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>B7: Kundfordringar (Det kapital som ligger som fordringar hos kunder för fakturor utställda under redovisningsperioden men som ännu inte betalats av kund avrundat till hela kronor. Dessa fakturor hör till redovisningsperioden om verksamheten redovisas enligt fakturametoden.)</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>B9: Kassa och ban (Det tillgängliga kapital som finns hos näringsverksamhetens företagskonto vid redovisningsperiodens slut avrundat till hela kronor. Värdet motsvarar den ingående balansen för kontot justerat för alla betalningar som gjorts till och från kontot under redovisningsperioden.)</td>
+					<td>61 785</td>
+				</tr>
+				<tr>
+					<td>B10: Eget kapital (Det kapital som tillhör verksamheten vid redovisningsperiodens slut. Värdet beräknas automatiskt.)</td>
+					<td>50 024</td>
+				</tr>
+				<tr>
+					<td>B14: Skatteskulder (De skattemässiga skulder som har uppstått rörande verksamheten under redovisningsperioden vilka vanligen utgörs av momsöverskott som ska betalas till Skatteverket.)</td>
+					<td>11 761</td>
+				</tr>
+				<tr>
+					<td>R1: Försäljning och utfört arbete samt övriga momspliktiga intäkter (De totala intäkter exkl. moms som har uppstått i verksamheten under redovisningsperioden avrundat till hela kronor.)</td>
+					<td>71 419</td>
+				</tr>
+				<tr>
+					<td>R6: Övriga externa kostnader (De övriga kostnader exkl. moms som har ådragits verksamheten under redovisningsperioden avrundat till hela kronor.)</td>
+					<td>24 378</td>
+				</tr>
+				<tr>
+					<td>R11: Bokfört resultat (Det bokföringsmässiga resultatet för verksamheten under redovisningsperioden. Värdet beräknas automatiskt.)</td>
+					<td>47 041</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<p>När deklarationen görs kan fullt avdrag för egenavgifter göras vilket under kommande år justeras mot de faktiska avgifterna som betalades under föregående år. Skattereglerna är alltså så komplicerade att inte ens Skatteverket klarar av att räkna ut dem korrekt i en och samma vända.</p>
+
+		<h2>Årlig checklista</h2>
+
+		<ul>
+			<li>Betala alla fakturor och bokför allt som ska bokföras under det gångna året.</li>
+			<li>Stäng momsperioden, skapa momsrapport och bokför resultatet.</li>
+			<li>Skicka in momsrapporten genom Skatteverkets e-tjänst.</li>
+			<li>Betala momsöverskott till Skatteverket och bokför betalningen.</li>
+			<li>Stäng bokföringsperioden och bokför resultatet.</li>
+			<li>Ta ut resultatet från företagskontot och bokför uttaget.</li>
+			<li>Beräkna ungefärlig kvarskatt för det gångna året och betala denna till skattekontot innan mitten av februari.</li>
+			<li>Betala preliminärskatt för det nya året till skattekontot innan mitten av februari.</li>
+			<li>Deklarera och betala eventuell resterande kvarskatt.</li>
+		</ul>
+
+		<h2>Information</h2>
+
+		<h3>Förbrukningsinventarier</h3>
+
+		<p>Som förbrukningsinventarier räknas inventarier med en ekonomisk livslängd längre än 1 år och kortare än 3 år, samt inventarier av obetydligt värde. Förbrukningsinventarier behöver inte bokföras som tillgångar i den enskilda näringsverksamheten utan hela inköpet kan istället bokföras direkt som en kostnad.</p>
+
+		<p>Inventarier bedöms vara av obetydligt värde om de kostar mindre än ett halvt prisbasbelopp exkl. moms. För 2023 är det hela prisbasbeloppet 52 500 kr och det halva beloppet därför 26 250 kr.</p>
+
+		<p>Till kategorin förbrukningsinventarier räknas bland annat datorer, mobiltelefoner och annan elektronisk utrustning med kort ekonomisk livslängd. Det behöver dock finnas ett behov av inventarierna i den enskilda näringsverksamheten för att kunna bokföra inköpen som tillhörande verksamheten.</p>
+	</body>
+</html>
