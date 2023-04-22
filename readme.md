@@ -2,6 +2,8 @@
 
 Den här guiden är inte skriven av en auktoriserad revisor utan av en enskild näringsidkare som sköter sin egen bokföring. Guiden kan innehålla faktafel och ska inte ses som rådgivning utan syftar istället till att öka förståelsen för hur bokföring sköts för en enskild näringsverksamhet.
 
+Joel Ek
+
 ## Löpande bokföring
 
 ### Vid utställning av faktura
@@ -555,7 +557,7 @@ När deklarationen görs kan fullt avdrag för egenavgifter göras vilket under 
 ## Årlig checklista
 
 * Betala alla fakturor och bokför allt som ska bokföras under det gångna året.
-* Stäng momsperioden och skapa momsrapport.
+* Stäng momsperioden, skapa momsrapport och bokför resultatet.
 * Skicka in momsrapporten genom Skatteverkets e-tjänst.
 * Betala momsöverskott till Skatteverket och bokför betalningen.
 * Stäng bokföringsperioden och bokför resultatet.
